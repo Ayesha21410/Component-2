@@ -55,6 +55,15 @@ class QuizStarter:
             self.entry_box.destroy()
             self.user_label.destroy()
             self.heading_label.destroy()
-            Quiz(root)
+            self.continue_button.destroy()
+            Instructionwindow(root)
+
+#component 2 
+class Instructionwindow:
+    def __init__(self, parent):
+            
+            #background colour selection
+            background_color2 = "#f7bfbe"
+            background_color3= "#c7dfac"
 
         
