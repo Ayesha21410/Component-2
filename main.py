@@ -31,4 +31,26 @@ class QuizStarter:
         self.continue_button = Button(parent, text="Continue", font=("Helvetica", "13", "bold"), bg="#fca8f9", command=self.name_collection)
         self.continue_button.place(x=268,y=360)
 
+    def name_collection(self):
+        name=self.entry_box.get()
+        if name == '':
+            messagebox.showerror('Name is Vital!!!',
+                                 'Please enter your name')
+        elif len(name) > 20:
+
+                          
+
+            messagebox.showerror('limit error!!!',
+                                 'please enter a name between 1 and 20 characters'
+                                 )
+        elif name.isnumeric():
+            messagebox.showerror('Name error!!!',
+                                 'Name can only consist of letters'
+                                 )
+        elif  not name.isalpha():
+                messagebox.showerror('Name error!!',
+                'name can not consist of symbols')
+        else:
+            names_list.append(name)  # add name to names list declared at the beginning
+
         
