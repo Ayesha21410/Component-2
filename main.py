@@ -9,6 +9,7 @@ class QuizStarter:
     def __init__(self, parent):#constructor, The __init__() function is called automatically every time the class is being used to create a new object.
         background_color1="#f0dff2"
         background_color="#a3e4fa"
+      
         #For title image
         self.title_image = Image.open("Title.png") #need to use Image if need to resize 
         self.title_image = self.title_image.resize((295, 135), Image.ANTIALIAS)
@@ -16,3 +17,10 @@ class QuizStarter:
         
         self.heading_label=Label(parent, image=self.title_image, border=0)
         self.heading_label.place(x=170, y=110) 
+
+        #inserting label for user name
+        #label for username
+        self.user_label=Label(parent, text="Please enter your username below: ", font=("Tw Cen MT","16"),bg=background_color)
+        self.user_label.place(x=120, y=260) 
+
+        
