@@ -84,4 +84,8 @@ class Instructionwindow:
             self.font_label=Label(parent,text="Do you want to read instruction?  ", font=("Tw Cen MT","14","bold"),bg=background_color3 )
             self.font_label.place(x=120, y=280)
 
+            #Yes button
+            self.yes_button = Button(parent, text="Yes,I want.", font=("Helvetica", "15", "bold"), bg="lightBlue",command=self.printinstruction)
+            self.yes_button.place(x=125,y=362)
+
         
