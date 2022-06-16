@@ -116,4 +116,7 @@ class Instructionwindow:
         
             self.printinstrution_label=Label(image=self.printinstruction_image,border=0 )
             self.printinstrution_label.place(x=130, y=210)
-        
+
+            #continue button
+            self.continue_button = Button( text="Continue", font=("Helvetica", "13", "bold"), bg="#fca8f9",command=self.instruction_collection )
+            self.continue_button.place(x=250,y=390)
