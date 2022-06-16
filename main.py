@@ -87,5 +87,8 @@ class Instructionwindow:
             #Yes button
             self.yes_button = Button(parent, text="Yes,I want.", font=("Helvetica", "15", "bold"), bg="lightBlue",command=self.printinstruction)
             self.yes_button.place(x=125,y=362)
+            #Skip button
+            self.skip_button = Button(parent, text="No,Skip it.", font=("Helvetica", "15", "bold"), bg="Pink")
+            self.skip_button.place(x=345,y=362)
 
         
