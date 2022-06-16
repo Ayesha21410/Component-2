@@ -94,4 +94,9 @@ class Instructionwindow:
             #background colour selection
             background_color2 = "#f7bfbe" 
 
+             # code for bg image
+            self.bg_img = Image.open('Quiz.png')  # update my image file
+            image = ImageTk.PhotoImage(self.bg_img)  # update PhotoImage
+            image_label= Label(root, image=bg_image)
+            image_label.place(x=0, y=0, relwidth=1, relheight=1)
         
