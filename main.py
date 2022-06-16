@@ -120,3 +120,9 @@ class Instructionwindow:
             #continue button
             self.continue_button = Button( text="Continue", font=("Helvetica", "13", "bold"), bg="#fca8f9",command=self.instruction_collection )
             self.continue_button.place(x=250,y=390)
+      #To destroy Instructionwindow 
+    def instruction_collection(self):
+            self.heading_label.destroy()
+            self.printinstrution_label.destroy()
+            self.continue_button.destroy()
+            Questionwindow(root)
