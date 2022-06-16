@@ -99,4 +99,13 @@ class Instructionwindow:
             image = ImageTk.PhotoImage(self.bg_img)  # update PhotoImage
             image_label= Label(root, image=bg_image)
             image_label.place(x=0, y=0, relwidth=1, relheight=1)
+
+            # code for title image
+            self.title_image = Image.open("Title.png") #need to use Image if need to resize 
+            self.title_image = self.title_image.resize((285, 120), Image.ANTIALIAS)
+            self.title_image = ImageTk.PhotoImage(self.title_image)
+        
+            
+            self.heading_label=Label(image=self.title_image, border=0)
+            self.heading_label.place(x=170, y=90)
         
