@@ -80,9 +80,9 @@ class Instructionwindow:
             self.heading_label=Label(parent, image=self.title_image, border=0)
             self.heading_label.place(x=170, y=110)
 
-            # label for instruction 
-            self.font_label=Label(parent,text="Do you want to read instruction?  ", font=("Tw Cen MT","14","bold"),bg=background_color3 )
-            self.font_label.place(x=120, y=280)
+            # for instruction font
+            self.font_label=Label(parent,text="Do you want to read instruction?  ", font=("Tw Cen MT","13","bold"),bg= "pink",highlightbackground = '#96DED1', highlightthickness = 5)
+            self.font_label.place(x=135, y=280) #placement
 
             #Yes button
             self.yes_button = Button(parent, text="Yes,I want.", font=("Helvetica", "15", "bold"), bg="lightBlue",command=self.printinstruction)
