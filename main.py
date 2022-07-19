@@ -98,8 +98,8 @@ class Instructionwindow:
              # code for bg image
             self.bg_img = Image.open('Quiz.png')  # update my image file
             image = ImageTk.PhotoImage(self.bg_img)  # update PhotoImage
-            image_label= Label(root, image=bg_image)
-            image_label.place(x=0, y=0, relwidth=1, relheight=1)
+            self.image_label2= Label(root, image=bg_image) 
+            self.image_label2.place(x=0, y=0, relwidth=1, relheight=1)
 
             # code for title image
             self.title_image = Image.open("Title.png") #need to use Image if need to resize 
@@ -117,16 +117,21 @@ class Instructionwindow:
             #label for print instruction image
             self.printinstrution_label=Label(image=self.printinstruction_image,border=0 )
             self.printinstrution_label.place(x=130, y=210)
-
-            #continue button
-            self.continue_button = Button( text="Continue", font=("Helvetica", "13", "bold"), bg="#fca8f9",command=self.instruction_collection )
-            self.continue_button.place(x=250,y=390)
+           
+            
       #To destroy Instructionwindow 
     def instruction_collection(self):
             self.heading_label.destroy()
             self.printinstrution_label.destroy()
             self.continue_button.destroy()
-            Questionwindow(root)
+            self.image_label2.destroy()
+            image_label.destroy()
+            root.destroy()
+            self.open_Questionwindow()
+            #continue button
+            self.continue_button = Button( text="Continue", font=("Helvetica", "10", "bold"), bg="#fca8f9",command=continue_to_questions )
+            self.continue_button.place(x=250,y=390) #placement
+      
       
 
    #*******Program runs below: *******#
