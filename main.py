@@ -90,6 +90,7 @@ class Instructionwindow:
             #Skip button
             self.skip_button = Button(parent, text="No,Skip it.", font=("Helvetica", "15", "bold"), bg="Pink")
             self.skip_button.place(x=345,y=362)
+      #function for continue button in instruction window
     def printinstruction(self):
             #background colour selection
             background_color2 = "#f7bfbe" 
