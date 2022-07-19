@@ -131,6 +131,15 @@ class Instructionwindow:
             #continue button
             self.continue_button = Button( text="Continue", font=("Helvetica", "10", "bold"), bg="#fca8f9",command=continue_to_questions )
             self.continue_button.place(x=250,y=390) #placement
+            #skip button command      
+    def questions_collection(self): 
+            self.heading_label.destroy()
+            self.image_label2.destroy()    
+            root.destroy()#destroy the original window
+            root2 = Tk()#open a new window had to rename to root2 here as root is in this fuction
+            root2.title("General Knowledge Quiz!!")
+            root2.geometry("600x500")
+            Questionwindow(root2)
       
       
 
