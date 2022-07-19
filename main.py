@@ -140,6 +140,12 @@ class Instructionwindow:
             root2.title("General Knowledge Quiz!!")
             root2.geometry("600x500")
             Questionwindow(root2)
+            #continue button command 
+    def open_Questionwindow(self):
+            root = Tk()
+            root.title("General Knowledge Quiz!!")
+            root.geometry("600x500")
+            Questionwindow(root)
       
       
 
