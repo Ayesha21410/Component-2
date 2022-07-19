@@ -20,8 +20,8 @@ class QuizStarter:
 
     
         #label for username
-        self.user_label=Label(parent, text="Please enter your username below: ", font=("Tw Cen MT","16"),bg=background_color)
-        self.user_label.place(x=120, y=260) 
+        self.user_label=Label(parent, text="Please enter your username below: ", font=("Tw Cen MT","14","bold"),fg="Black",bg=background_color,highlightbackground = '#FF00FF', highlightthickness = 3)
+        self.user_label.place(x=115, y=260)  #placement 
 
          #entry box
         self.entry_box=Entry(parent)
@@ -126,3 +126,26 @@ class Instructionwindow:
             self.printinstrution_label.destroy()
             self.continue_button.destroy()
             Questionwindow(root)
+      
+
+   #*******Program runs below: *******#
+
+if __name__=="__main__":
+    root = Tk()
+    
+    root.title("General Knowledge Quiz!!")
+    root.geometry("600x500")
+    bg_image = Image.open("Quiz.png") #need to use Image if need to resize 
+    bg_image = bg_image.resize((600, 500), Image.ANTIALIAS)
+    bg_image = ImageTk.PhotoImage(bg_image)
+    image_label= Label(root, image=bg_image)
+    image_label.place(x=0, y=0, relwidth=1, relheight=1)
+    quizStarter_object = QuizStarter(root) #instantiation, making an instance of the class QuizStarter to create the frame with its widget, passing root as j 
+    quiz_instance = QuizStarter(root)
+    
+    
+    
+    root.mainloop()#so the window doesnt dissappear
+
+
+      
