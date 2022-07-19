@@ -114,7 +114,7 @@ class Instructionwindow:
             self.printinstruction_image = Image.open("Instruction.png") #need to use Image if need to resize 
             self.printinstruction_image = self.printinstruction_image.resize((355, 180), Image.ANTIALIAS)
             self.printinstruction_image = ImageTk.PhotoImage(self.printinstruction_image)
-        
+            #label for print instruction image
             self.printinstrution_label=Label(image=self.printinstruction_image,border=0 )
             self.printinstrution_label.place(x=130, y=210)
 
