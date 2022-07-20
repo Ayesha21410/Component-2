@@ -211,6 +211,7 @@ class Questionwindow:
             #Question number calculated label.
             self.qnumber_label = Label(self.quiz_frame , text ="", font = ("Helvetica", "11", "bold"), bg = background_color4, foreground = 'white', highlightbackground = '#CF9FFF', highlightthickness = 3, pady = 5) #Attributes.
             self.qnumber_label.place(x = 438, y = 180) #Placement.
+            shuffle() #Method to randomise the questions.
             
              
     
