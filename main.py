@@ -214,7 +214,7 @@ class Questionwindow:
 
             #Question number calculated label.
             self.qnumber_label = Label(self.quiz_frame , text ="", font = ("Helvetica", "11", "bold"), bg = background_color4, foreground = 'white', highlightbackground = '#CF9FFF', highlightthickness = 3, pady = 5) #Attributes.
-            self.qnumber_label.place(x = 368, y = 180) #Placement.
+            self.qnumber_label.place(x = 358, y = 180) #Placement.
            
             shuffle() #Method to randomise the questions.
 
@@ -246,7 +246,11 @@ self.questions_answers[qnum][0], font=("Tw Cen MT","11","bold"),bg=background_co
             self.score_label.place(x=242,y=380)
             #After Calculated score 
             self.calculatedscore_label = Label(self.quiz_frame, text ="", font = ("Helvetica", "10", "bold"), bg = background_color) 
-            self.calculatedscore_label.place(x = 325, y = 380)
+            self.calculatedscore_label.place(x = 305, y = 380)
+            #Answer label
+            self.answertext_label = Label(self.quiz_frame, text = "", font = ("Helvetica", "14"), bg = background_color3, foreground =background_color6, pady = 5, justify = 'center', wraplength = 360) #Attributes.
+            self.answertext_label.place(x =115, y = 406) #Widget Placement. 
+            self.score=0
       
             
              
