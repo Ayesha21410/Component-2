@@ -1,15 +1,16 @@
 #Imports
-from tkinter import *  
+from tkinter import *  #import everything from tkinter
 from PIL import Image, ImageTk # for Images
 from tkinter import messagebox  # for error messages
-import random
-names_list = [] 
+import random #random module
+names_list = []  #List used to append names in results
 asked=[] #List used to append question.
-#Component 1
+
+#Component 1  (Quiz Starter Window object) will be constructed through following class
 class QuizStarter:
     def __init__(self, parent):#constructor, The __init__() function is called automatically every time the class is being used to create a new object.
-        background_color1="#f0dff2"
-        background_color="#a3e4fa"
+        background_color1="#f0dff2"   #bg colour 1
+        background_color="#a3e4fa"    #bg colour 2
       
         #For title image
         self.title_image = Image.open("Title.png") #need to use Image if need to resize 
