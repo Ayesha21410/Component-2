@@ -259,7 +259,7 @@ self.questions_answers[qnum][0], font=("Tw Cen MT","11","bold"),bg=background_co
             self.score = 0  
             self.question_number = 1
             #confirm button
-            self.confirm_button = Button(self.quiz_frame , text="CONFIRM", bg="pink", command=self.test_progress)
+            self.confirm_button = Button(self.quiz_frame , text="CONFIRM",font=('Helvetica', '13', 'bold'), bg="Green", command=self.test_progress)
             self.confirm_button.place(x=460,y=430)
 
   #command for exit button.
@@ -329,6 +329,9 @@ self.questions_answers[qnum][0], font=("Tw Cen MT","11","bold"),bg=background_co
       self.quiz_frame.destroy() #Destroy the quiz frame for quiz page.
       #now create an object from ResultsPage
       ResultsPage(root) #object
+#component 4 result page the last page
+class ResultsPage:
+ def __init__(self, parent):
                  
       
             
