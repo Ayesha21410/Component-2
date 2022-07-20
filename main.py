@@ -332,6 +332,8 @@ self.questions_answers[qnum][0], font=("Tw Cen MT","11","bold"),bg=background_co
 #component 4 result page the last page
 class ResultsPage:
  def __init__(self, parent):
+            #colour selection 
+            background_color10=  "#ff66c4"
                  
       
             
