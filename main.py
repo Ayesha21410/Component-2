@@ -334,6 +334,11 @@ class ResultsPage:
  def __init__(self, parent):
             #colour selection 
             background_color10=  "#ff66c4"
+
+            #frame set up
+            self.quiz_frame = Frame( 
+        bg=background_color10)
+            self.quiz_frame.pack(fill = "both", expand = True)
                  
       
             
