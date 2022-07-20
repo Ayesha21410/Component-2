@@ -340,12 +340,10 @@ class ResultsPage:
         bg=background_color10)
             self.quiz_frame.pack(fill = "both", expand = True)
 
-              # code for title image
-            self.title_image = Image.open("Title3.png") #need to use Image if need to resize 
-            self.title_image = self.title_image.resize((305, 140), Image.ANTIALIAS)
-            self.title_image = ImageTk.PhotoImage(self.title_image)
-            self.heading_label=Label(image=self.title_image, border=0)
-            self.heading_label.place(x=145, y=20)
+            #Lable for title 
+            self.font_label=Label(text="General Knoweldge \n" + "Quiz", border=0,justify="center")
+            self.font_label.place(x=145, y=20)
+   
    
                  
       
