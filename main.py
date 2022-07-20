@@ -333,20 +333,27 @@ self.questions_answers[qnum][0], font=("Tw Cen MT","11","bold"),bg=background_co
 class ResultsPage:
  def __init__(self, parent):
             #colour selection 
-            background_color10=  "#ff66c4"
+            background_color10=  "#000000"
+            background_color11=  "#C3B1E1"
+            background_color12=  "#8B008B"
 
+            
+            
             #frame set up
             self.quiz_frame = Frame( 
         bg=background_color10)
             self.quiz_frame.pack(fill = "both", expand = True)
 
+          
             #Lable for title 
-            self.font_label=Label(text="General Knoweldge \n" + "Quiz", border=0,justify="center")
-            self.font_label.place(x=145, y=20)
+            self.font_label=Label(text="General \n" + "Knoweldge \n" + "Quiz", font=("Tw Cen MT","22","bold"),fg =background_color12,bg=background_color11, highlightbackground = '#FF00FF', highlightthickness = 4)
+            self.font_label.place(x=190, y=20)
+
+            #Lable for thanks  
+            self.font_label=Label(text="General \n" + "Knoweldge \n" + "Quiz", font=("Tw Cen MT","22","bold"),fg =background_color12,bg=background_color11, highlightbackground = '#FF00FF', highlightthickness = 4)
+            self.font_label.place(x=190, y=20)
+
    
-   
-                 
-      
             
              
     
