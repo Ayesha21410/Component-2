@@ -233,6 +233,9 @@ self.questions_answers[qnum][0], font=("Tw Cen MT","11","bold"),bg=background_co
             #option4
             self.rb4 = Radiobutton (self.quiz_frame , text = self.questions_answers[qnum][4], font=("Helvetica", "10"), bg=background_color5, value=4, variable=self.var1, pady=5,padx=8,relief = RAISED,width = 17,wraplength = 200, indicatoron = 0, activebackground = "Pink")
             self.rb4.place(x = 374, y = 360) #placement 
+            #Score label to show score(test result so far)
+            self.score_label=Label(self.quiz_frame , text="SCORE=", font=("Tw Cen Mt","10", "bold"),bg=background_color,fg="green",justify = 'center')
+            self.score_label.place(x=242,y=380)
       
             
              
