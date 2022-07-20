@@ -218,6 +218,9 @@ class Questionwindow:
 self.questions_answers[qnum][0], font=("Tw Cen MT","11","bold"),bg=background_color,justify = 'center',padx=10 ,wraplength = 480,highlightbackground = '#00008B', highlightthickness=3)
             self.question_label.place(x = 70, y = 240)  #placement 
             self.var1=IntVar()  #Holds the value of radio buttons.
+            #option 1
+            self.rb1 = Radiobutton (self.quiz_frame , text = self.questions_answers[qnum][1], font=("Helvetica", "10"), bg=background_color5, value=1, variable=self.var1, pady=5,padx=8,relief = RAISED, wraplength = 200,width = 17, indicatoron = 0, activebackground = "Pink")
+            self.rb1.place(x = 10, y = 305) #placement 
             
              
     
