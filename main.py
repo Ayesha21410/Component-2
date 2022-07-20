@@ -336,6 +336,10 @@ class ResultsPage:
             background_color10=  "#000000"
             background_color11=  "#C3B1E1"
             background_color12=  "#8B008B"
+            background_color13= "#FFB6C1"
+            background_color14= "#008080"
+            background_color15= "#00008b"
+            background_color16= "#ADD8E6"
 
             
             
@@ -350,8 +354,25 @@ class ResultsPage:
             self.font_label.place(x=190, y=20)
 
             #Lable for thanks  
-            self.font_label=Label(text="General \n" + "Knoweldge \n" + "Quiz", font=("Tw Cen MT","22","bold"),fg =background_color12,bg=background_color11, highlightbackground = '#FF00FF', highlightthickness = 4)
-            self.font_label.place(x=190, y=20)
+            self.font_label=Label(text="Thanks for playing!! \n" + "I sincerely hope you enjoyed the quiz.", font=("Tw Cen MT","15","bold"),fg =background_color14,bg=background_color13, highlightbackground = '#ffe4e1', highlightthickness = 4)
+            self.font_label.place(x=40, y=180)
+           #Lable for go back to menu   
+            self.font_label=Label(text="NOTE: If  you want to  exit. Click on Exit button.",font=("Tw Cen MT","10","bold"),fg =background_color15,bg=background_color16, highlightbackground = '#ffe4e1', highlightthickness = 4,wraplength=510)
+            self.font_label.place(x=60, y=280)
+
+    
+            # exit button 
+            self.exit_button = Button(parent, text='Exit',font=('Helvetica', '13', 'bold'), bg='red',command=self.exit)
+            self.exit_button.place(x = 20, y = 530) #Placement.
+   #Method to destroy window.
+ def exit(self):
+        self.quiz_frame.destroy()
+
+    
+
+
+            
+   
 
    
             
