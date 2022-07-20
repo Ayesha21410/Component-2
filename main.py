@@ -14,9 +14,10 @@ class QuizStarter:
       
         #For title image
         self.title_image = Image.open("Title.png") #need to use Image if need to resize 
+        #To resize the image with width and height dimensions.
         self.title_image = self.title_image.resize((295, 135), Image.ANTIALIAS)
         self.title_image = ImageTk.PhotoImage(self.title_image)
-        
+        #Label widget for title image.
         self.heading_label=Label(parent, image=self.title_image, border=0)
         self.heading_label.place(x=170, y=110) 
 
@@ -25,14 +26,15 @@ class QuizStarter:
         self.user_label=Label(parent, text="Please enter your username below: ", font=("Tw Cen MT","14","bold"),fg="Black",bg=background_color,highlightbackground = '#FF00FF', highlightthickness = 3)
         self.user_label.place(x=115, y=260)  #placement 
 
-         #entry box
+         #entry box which is used by the user to input their name.
         self.entry_box=Entry(parent)
         self.entry_box.place(x=230, y=320)
 
         #continue button
         self.continue_button = Button(parent, text="Continue", font=("Helvetica", "13", "bold"), bg="#fca8f9",activebackground = "#a3e4fa" ,command=self.name_collection)
         self.continue_button.place(x=268,y=360)
-
+      
+# method in class to collect the name entered by user, destry widgets and create a instruction object
     def name_collection(self):
         name=self.entry_box.get()
         if name == '':
@@ -54,13 +56,13 @@ class QuizStarter:
                 'name can not consist of symbols')
         else:
             names_list.append(name)  # add name to names list declared at the beginning
-            self.entry_box.destroy()
-            self.user_label.destroy()
-            self.heading_label.destroy()
-            self.continue_button.destroy()
-            Instructionwindow(root)
+            self.entry_box.destroy() #destroy entry box
+            self.user_label.destroy() #destroy user label
+            self.heading_label.destroy()#destroy heading label
+            self.continue_button.destroy()#destroy countinue button
+            Instructionwindow(root) #open Instructionwindow
 
-#component 2 
+#component 2 (Instruction window object) will be constructed through following class 
 class Instructionwindow:
     def __init__(self, parent):
             
