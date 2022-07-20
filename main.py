@@ -261,6 +261,13 @@ self.questions_answers[qnum][0], font=("Tw Cen MT","11","bold"),bg=background_co
             #confirm button
             self.confirm_button = Button(self.quiz_frame , text="CONFIRM", bg="pink", command=self.test_progress)
             self.confirm_button.place(x=460,y=430)
+
+  #command for exit button.
+    def exit(self):
+            self.quiz_frame.destroy()#you can not relate the root to self. root is your main window
+           # toplevel.destroy()
+            self.heading_label.destroy()
+            self.exit_button.destroy()
       
             
              
