@@ -155,6 +155,10 @@ def shuffle():
     asked.append(qnum)
   elif  qnum in asked: #If question (key) was already appended to list, then shuffle keys again.
     shuffle()
+
+#Question class that has all the quiz options and calculation methods.
+class Questionwindow:
+    def __init__(self,parent): 
     
       
       
