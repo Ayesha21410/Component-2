@@ -67,7 +67,7 @@ class Instructionwindow:
     def __init__(self, parent):
             
             #background colour selection
-            background_color2 = "#f7bfbe" 
+            background_color2 = "#f7bfbe" #bg colour2
       
             # code for bg image
             self.bg_img = Image.open('Quiz.png')  # update my image file
@@ -136,20 +136,20 @@ class Instructionwindow:
 
     #skip button command      
     def questions_collection(self): 
-            self.heading_label.destroy()
-            self.image_label2.destroy()    
+            self.heading_label.destroy() #destroy the heading_label
+            self.image_label2.destroy()  #destroy the image_label2
             root.destroy()#destroy the original window
             root2 = Tk()#open a new window had to rename to root2 here as root is in this fuction
             root2.title("General Knowledge Quiz!!")
             root2.geometry("600x500")
-            Questionwindow(root2)
+            Questionwindow(root2) #open Questionwindow
       
     #continue button command 
     def open_Questionwindow(self):
             root = Tk()
             root.title("General Knowledge Quiz!!")
             root.geometry("600x500")
-            Questionwindow(root)
+            Questionwindow(root) #open Questionwindow
       
 #Randomiser function which shuffles the keys in the dictionary.      
 def shuffle():
@@ -214,7 +214,7 @@ class Questionwindow:
 
             #Question number calculated label.
             self.qnumber_label = Label(self.quiz_frame , text ="", font = ("Helvetica", "11", "bold"), bg = background_color4, foreground = 'white', highlightbackground = '#CF9FFF', highlightthickness = 3, pady = 5) #Attributes.
-            self.qnumber_label.place(x = 438, y = 180) #Placement.
+            self.qnumber_label.place(x = 368, y = 180) #Placement.
            
             shuffle() #Method to randomise the questions.
 
@@ -244,6 +244,9 @@ self.questions_answers[qnum][0], font=("Tw Cen MT","11","bold"),bg=background_co
             #Score label to show score(test result so far)
             self.score_label=Label(self.quiz_frame , text="SCORE=", font=("Tw Cen Mt","10", "bold"),bg=background_color,fg="green",justify = 'center')
             self.score_label.place(x=242,y=380)
+            #After Calculated score 
+            self.calculatedscore_label = Label(self.quiz_frame, text ="", font = ("Helvetica", "10", "bold"), bg = background_color) 
+            self.calculatedscore_label.place(x = 325, y = 380)
       
             
              
