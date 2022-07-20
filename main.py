@@ -278,6 +278,11 @@ self.questions_answers[qnum][0], font=("Tw Cen MT","11","bold"),bg=background_co
        self.rb4.config(text=self.questions_answers[qnum][4])
            
     def test_progress(self):
+       #Instance labels of classes are equal to a variable name so I can configure the texts easily.
+      total_score = self.calculatedscore_label
+      option_choice = self.var1.get()
+      answer_text = self.answertext_label
+      question_counter = self.qnumber_label
       
             
              
