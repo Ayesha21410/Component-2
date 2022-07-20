@@ -229,7 +229,11 @@ self.questions_answers[qnum][0], font=("Tw Cen MT","11","bold"),bg=background_co
             self.rb2.place(x = 374, y = 305) #placement
             #option3
             self.rb3 = Radiobutton (self.quiz_frame , text = self.questions_answers[qnum][3], font=("Helvetica", "10"), bg=background_color5, value=3, variable=self.var1, pady=5,padx=8,relief = RAISED,width = 17,wraplength = 200, indicatoron = 0, activebackground = "Pink")
-            self.rb3.place(x = 10, y = 360) #placement 
+            self.rb3.place(x = 10, y = 360) #placement
+            #option4
+            self.rb4 = Radiobutton (self.quiz_frame , text = self.questions_answers[qnum][4], font=("Helvetica", "10"), bg=background_color5, value=4, variable=self.var1, pady=5,padx=8,relief = RAISED,width = 17,wraplength = 200, indicatoron = 0, activebackground = "Pink")
+            self.rb4.place(x = 374, y = 360) #placement 
+      
             
              
     
