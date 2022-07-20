@@ -203,6 +203,9 @@ class Questionwindow:
             self.title_image = ImageTk.PhotoImage(self.title_image)
             self.heading_label=Label(image=self.title_image, border=0)
             self.heading_label.place(x=145, y=20)
+            #Question counter label.
+            self.questioncounter_label = Label(self.quiz_frame , text = "QUESTION NUMBER : ", font = ("Helvetica", "11", "bold"), foreground = 'white', bg = background_color4, highlightbackground = '#CF9FFF', highlightthickness = 3, pady = 5) #Attributes.
+            self.questioncounter_label.place(x = 170, y = 180) #Placement.
             
              
     
