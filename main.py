@@ -251,10 +251,13 @@ self.questions_answers[qnum][0], font=("Tw Cen MT","11","bold"),bg=background_co
             self.answertext_label = Label(self.quiz_frame, text = "", font = ("Helvetica", "14"), bg = background_color3, foreground =background_color6, pady = 5, justify = 'center', wraplength = 360) #Attributes.
             self.answertext_label.place(x =115, y = 406) #Widget Placement. 
             self.score=0
+            
             # exit button 
-
             self.exit_button = Button(parent, text='Exit',font=('Helvetica', '13', 'bold'), bg='red',command=self.exit)
             self.exit_button.place(x=7, y=430)
+            #Creating instances of score variable and question number variable to be used through the classes.
+            self.score = 0  
+            self.question_number = 1
       
             
              
