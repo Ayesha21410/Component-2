@@ -224,6 +224,9 @@ self.questions_answers[qnum][0], font=("Tw Cen MT","11","bold"),bg=background_co
             #option 1
             self.rb1 = Radiobutton (self.quiz_frame , text = self.questions_answers[qnum][1], font=("Helvetica", "10"), bg=background_color5, value=1, variable=self.var1, pady=5,padx=8,relief = RAISED, wraplength = 200,width = 17, indicatoron = 0, activebackground = "Pink")
             self.rb1.place(x = 10, y = 305) #placement 
+            #option2
+            self.rb2 = Radiobutton (self.quiz_frame , text = self.questions_answers[qnum][2], font=("Helvetica", "10"), bg=background_color5, value=2, variable=self.var1, pady=5,padx=8,relief = RAISED,width = 17,wraplength = 200, indicatoron = 0, activebackground = "Pink")
+            self.rb2.place(x = 374, y = 305) #placement
             
              
     
