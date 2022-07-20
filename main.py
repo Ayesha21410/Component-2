@@ -324,6 +324,12 @@ self.questions_answers[qnum][0], font=("Tw Cen MT","11","bold"),bg=background_co
                    answer_text.configure(text=" INCORRECT! \n" +"The correct answer was " + self.questions_answers[qnum][5],fg="Red")
                    self.confirm_button.configure(text="Confirm")
                    self.questions_setup()
+
+    def final_result(self):
+      self.quiz_frame.destroy() #Destroy the quiz frame for quiz page.
+      #now create an object from ResultsPage
+      ResultsPage(root) #object
+                 
       
             
              
