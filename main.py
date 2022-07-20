@@ -159,6 +159,14 @@ def shuffle():
 #Question class that has all the quiz options and calculation methods.
 class Questionwindow:
     def __init__(self,parent): 
+            #bg colour selection
+            background_color=  "#a3e4fa"
+            background_color1= "#00FF00"
+            background_color2 = "#f7bfbe"
+            background_color3 = "#000000"
+            background_color4 = "#7F00FF"
+            background_color5=  "#C3B1E1"
+            background_color6=  "#ff0000" 
     
       
       
