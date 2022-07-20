@@ -210,8 +210,8 @@ class Questionwindow:
 
             #Question number calculated label.
             self.qnumber_label = Label(self.quiz_frame , text ="", font = ("Helvetica", "11", "bold"), bg = background_color4, foreground = 'white', highlightbackground = '#CF9FFF', highlightthickness = 3, pady = 5) #Attributes.
-            self.qnumber_label.place(x = 368, y = 180) #Placement.
-            
+            self.qnumber_label.place(x = 438, y = 180) #Placement.
+           
             shuffle() #Method to randomise the questions.
 
             #questions
@@ -224,15 +224,19 @@ self.questions_answers[qnum][0], font=("Tw Cen MT","11","bold"),bg=background_co
             #option 1
             self.rb1 = Radiobutton (self.quiz_frame , text = self.questions_answers[qnum][1], font=("Helvetica", "10"), bg=background_color5, value=1, variable=self.var1, pady=5,padx=8,relief = RAISED, wraplength = 200,width = 17, indicatoron = 0, activebackground = "Pink")
             self.rb1.place(x = 10, y = 305) #placement 
+      
             #option2
             self.rb2 = Radiobutton (self.quiz_frame , text = self.questions_answers[qnum][2], font=("Helvetica", "10"), bg=background_color5, value=2, variable=self.var1, pady=5,padx=8,relief = RAISED,width = 17,wraplength = 200, indicatoron = 0, activebackground = "Pink")
-            self.rb2.place(x = 374, y = 305) #placement
+            self.rb2.place(x = 374, y = 305) #placement 
+      
             #option3
             self.rb3 = Radiobutton (self.quiz_frame , text = self.questions_answers[qnum][3], font=("Helvetica", "10"), bg=background_color5, value=3, variable=self.var1, pady=5,padx=8,relief = RAISED,width = 17,wraplength = 200, indicatoron = 0, activebackground = "Pink")
-            self.rb3.place(x = 10, y = 360) #placement
+            self.rb3.place(x = 10, y = 360) #placement 
+      
             #option4
             self.rb4 = Radiobutton (self.quiz_frame , text = self.questions_answers[qnum][4], font=("Helvetica", "10"), bg=background_color5, value=4, variable=self.var1, pady=5,padx=8,relief = RAISED,width = 17,wraplength = 200, indicatoron = 0, activebackground = "Pink")
             self.rb4.place(x = 374, y = 360) #placement 
+      
             #Score label to show score(test result so far)
             self.score_label=Label(self.quiz_frame , text="SCORE=", font=("Tw Cen Mt","10", "bold"),bg=background_color,fg="green",justify = 'center')
             self.score_label.place(x=242,y=380)
