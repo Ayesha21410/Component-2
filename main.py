@@ -207,6 +207,10 @@ class Questionwindow:
             #Question counter label.
             self.questioncounter_label = Label(self.quiz_frame , text = "QUESTION NUMBER : ", font = ("Helvetica", "11", "bold"), foreground = 'white', bg = background_color4, highlightbackground = '#CF9FFF', highlightthickness = 3, pady = 5) #Attributes.
             self.questioncounter_label.place(x = 170, y = 180) #Placement.
+
+            #Question number calculated label.
+            self.qnumber_label = Label(self.quiz_frame , text ="", font = ("Helvetica", "11", "bold"), bg = background_color4, foreground = 'white', highlightbackground = '#CF9FFF', highlightthickness = 3, pady = 5) #Attributes.
+            self.qnumber_label.place(x = 438, y = 180) #Placement.
             
              
     
