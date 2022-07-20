@@ -258,6 +258,9 @@ self.questions_answers[qnum][0], font=("Tw Cen MT","11","bold"),bg=background_co
             #Creating instances of score variable and question number variable to be used through the classes.
             self.score = 0  
             self.question_number = 1
+            #confirm button
+            self.confirm_button = Button(self.quiz_frame , text="CONFIRM", bg="pink", command=self.test_progress)
+            self.confirm_button.place(x=460,y=430)
       
             
              
