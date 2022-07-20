@@ -283,6 +283,47 @@ self.questions_answers[qnum][0], font=("Tw Cen MT","11","bold"),bg=background_co
       option_choice = self.var1.get()
       answer_text = self.answertext_label
       question_counter = self.qnumber_label
+      if len(asked)>9:#if the question is last and right
+           if option_choice == self.questions_answers[qnum][6]:#if the last question is right         
+              self.score += 1
+              self.question_number += 1 
+              total_score.configure(text=self.score)
+              question_counter.configure(text=self.question_number, fg = 'white')
+              answer_text.configure (text = "Correct!", fg = 'green')
+              self.confirm_button.configure(text="Confirm")
+              self.final_result()
+            
+              
+           else: #if last question is wrong answer 
+              self.score += 0
+              self.question_number += 1 #Add to question number.
+              total_score.configure(text=self.score)
+              question_counter.configure(text=self.question_number, fg = 'white')
+              answer_text.configure(text="Incorrect: \n" + "The correct answer was" + self.questions_answers[qnum][5],fg = 'red')
+              self.confirm_button.configure(text="Confirm")
+              self.final_result()
+      
+      else:#if its not the last question
+           if option_choice==0:#check if the user has made a choice
+             answer_text.configure(text = "Sorry you didn't select anything, please retry", fg = 'yellow')
+             
+           else:#if they made a choice and its not the last question
+               if option_choice==self.questions_answers[qnum][6]:#if choice is right
+                   self.score += 1
+                   self.question_number += 1 #Add to question number.
+                   total_score.configure(text=self.score)
+                   question_counter.configure(text= self.question_number, fg = 'white')
+                   answer_text.configure(text= "Correct!", fg = 'green')
+                   self.confirm_button.configure(text="Confirm")
+                   self.questions_setup()#run this method to move to next qustion
+               else: #if the choice was wrong
+                   self.score += 0
+                   self.question_number += 1 #Add to question number.
+                   total_score.configure(text=self.score)
+                   question_counter.configure(text=self.question_number, fg = 'white')
+                   answer_text.configure(text=" INCORRECT! \n" +"The correct answer was " + self.questions_answers[qnum][5],fg="Red")
+                   self.confirm_button.configure(text="Confirm")
+                   self.questions_setup()
       
             
              
