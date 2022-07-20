@@ -203,6 +203,7 @@ class Questionwindow:
             self.title_image = ImageTk.PhotoImage(self.title_image)
             self.heading_label=Label(image=self.title_image, border=0)
             self.heading_label.place(x=145, y=20)
+            
              
     
       
