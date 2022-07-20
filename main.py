@@ -212,6 +212,11 @@ class Questionwindow:
             self.qnumber_label = Label(self.quiz_frame , text ="", font = ("Helvetica", "11", "bold"), bg = background_color4, foreground = 'white', highlightbackground = '#CF9FFF', highlightthickness = 3, pady = 5) #Attributes.
             self.qnumber_label.place(x = 438, y = 180) #Placement.
             shuffle() #Method to randomise the questions.
+
+            #questions
+            self.question_label=Label(self.quiz_frame , text= 
+self.questions_answers[qnum][0], font=("Tw Cen MT","11","bold"),bg=background_color,justify = 'center',padx=10 ,wraplength = 480,highlightbackground = '#00008B', highlightthickness=3)
+            self.question_label.place(x = 70, y = 240)  #placement 
             
              
     
