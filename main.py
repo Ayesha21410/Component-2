@@ -217,6 +217,7 @@ class Questionwindow:
             self.question_label=Label(self.quiz_frame , text= 
 self.questions_answers[qnum][0], font=("Tw Cen MT","11","bold"),bg=background_color,justify = 'center',padx=10 ,wraplength = 480,highlightbackground = '#00008B', highlightthickness=3)
             self.question_label.place(x = 70, y = 240)  #placement 
+            self.var1=IntVar()  #Holds the value of radio buttons.
             
              
     
