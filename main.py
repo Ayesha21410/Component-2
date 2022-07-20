@@ -166,7 +166,37 @@ class Questionwindow:
             background_color3 = "#000000"
             background_color4 = "#7F00FF"
             background_color5=  "#C3B1E1"
-            background_color6=  "#ff0000" 
+            background_color6=  "#ff0000"
+      
+            
+            #Dictionary that contains the keys and values of questions 1-10.
+            self.questions_answers= {
+  #Keys contain values that is the question and answers.
+  1: [" What is the capital of Finland?" , "Sweden" , "Estonia." , "Norway." , "Helsinki." , "Helsinki." , 4],
+
+  2: ["  What's the biggest animal in the world?" , "  The blue whale." , "African Elephant." , "Giraffe." , "Ostrich." , "The blue whale." , 1],
+
+  3: ["Which country is brie cheese originally from?" , "China." , "America." , "France." , "Australia.", "france." , 3],
+
+  4: ["What is the largest country in the world?" , "America." , "Russia." , "Cnada." , "Brazil.", "Russia." , 2],
+
+  5: ["Who came second in the FIFA Women's World Cup in 2019?" , "England." , "Netherlands" , "France" , "Spain" , "Netherlands." , 2],
+
+  6: ["Typically, what's the strongest muscle in the human body?" , "pectoral muscle." , "Tricep muscle." , "masseter muscle ." ,"biceps muscle", "masseter muscle." , 3],
+
+  7: ["How many minutes in a game of rugby league?" , "80 minutes." , "60 minutes." , "20 minutes." ,"120 minutes" ,"80 minutes." , 1],
+
+  8: ["Which planet is closest to the sun?" , "Mercury." , "Venus." , "Earth." , "Jupitar.", "Mercury." , 1],
+
+  9: ["What fruit takes the scientific name Mangifera indica?" , "Orange.", "Banana." , "Mango.", "Apple." , "Mango." , 3],
+
+  10: ["How many sides does a heptadecagon have?" , "Eighteen." , "Ten." , "Twenty." , "Seventeen." , "Seventeen." , 4],
+}
+            #frame set up
+            self.quiz_frame = Frame(parent, 
+        bg=background_color3)
+            self.quiz_frame.pack(fill = "both", expand = True)
+             
     
       
       
